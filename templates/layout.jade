@@ -18,8 +18,8 @@ html(lang='en')
       script(src='css/5grid/jquery.js')
       script(src='css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI.titleBarHeight=55&amp;mobileUI.openerWidth=75&amp;mobileUI.openerText=&lt;')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
-  body
 
+  body
     //Header
     div#header-wrapper
       header#header.5grid-layout
@@ -183,4 +183,4 @@ html(lang='en')
     div#copyright
       &copy; Untitled. All rights reserved. | Design:
       a(href='#') HTML5 Up
-      a(href='#')
+      a(href='#') #{ new Date().getFullYear() } #{ locals.owner }

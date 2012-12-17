@@ -15,8 +15,6 @@ html(lang='en')
         link(rel='stylesheet', href='/css/5grid/core-noscript.css')
         link(rel='stylesheet', href='/css/style.css')
         link(rel='stylesheet', href='/css/style-desktop.css')
-      script(src='css/5grid/jquery.js')
-      script(src='css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI.titleBarHeight=55&amp;mobileUI.openerWidth=75&amp;mobileUI.openerText=&lt;')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
 
   body
@@ -26,159 +24,40 @@ html(lang='en')
         div.row
           div.12u
             h1
-              a.mobileUI-site-name(href='#') Talento Digital
-            nav.mobileUI-site-nav
-              a(href='#') Home
-              a(href='#') Blog
-              a(href='#') About us
+              a.mobileUI-site-name(href='#') Primer Foro de Talento Digital
+            nav#nav.mobileUI-site-nav
+              a(href='#features-wrapper') Acerca de
+              a(href='#') Inscripci&oacute;n
+              a(href='#') Apoyado por
+            div.sharethis
+              span.st_email_hcount(displayText='Email')
+              span.st_facebook_hcount(displayText='Facebook')
+              span.st_twitter_hcount(displayText='Tweet')
+              span.st_linkedin_hcount(displayText='LinkedIn')
       div#banner
         div.5grid-layout
           div.row
             div.6u
-              p We do something really useful, important, and unique. Learn all about it here ..
-              a.button-big(href='#') Go on, click me!
+              :markdown
+                En la era de la informaci&oacute;n y la tecnolog&iacute;a son nuevas las habilidades
+                que se requieren, esta el pa&iacute;s preparado para una nueva la nueva era digital?
+
+              a.button-big(href='#') Inscribete!
             div.6u
               a.bordered-feature-image(href='#')
-                img(src='images/banner.jpg', alt='')
+                img(src='images/talent.jpg', alt='')
 
-    // Features
-    div#features-wrapper
-      div#features
-        div.5grid-layout
-          div.row
-            div.3u
-              section
-                a.bordered-feature-image(href='#')
-                  img(src='images/pic01.jpg', alt='')
-                h2 Welcome to Halcyonic
-                :markdown
-                  This is a **Halcyonic** a free template that can
-                  include [links](http://www.google.com)
-                  so this kick _ass_ [badly](http://david.roncancio.me)
+    block content
 
-            div.3u
-              section
-                a.bordered-feature-image(href='#')
-                  img(src='images/pic02.jpg', alt='')
-                h2 Welcome to Halcyonic
-                :markdown
-                  This is a **Halcyonic** a free template that can
-                  include [links](http://www.google.com)
-                  so this kick _ass_ [badly](http://david.roncancio.me)
-
-            div.3u
-              section
-                a.bordered-feature-image(href='#')
-                  img(src='images/pic03.jpg', alt='')
-                h2 Welcome to Halcyonic
-                :markdown
-                  This is a **Halcyonic** a free template that can
-                  include [links](http://www.google.com)
-                  so this kick _ass_ [badly](http://david.roncancio.me)
-
-            div.3u
-              section
-                a.bordered-feature-image(href='#')
-                  img(src='images/pic04.jpg', alt='')
-                h2 Welcome to Halcyonic
-                :markdown
-                  This is a **Halcyonic** a free template that can
-                  include [links](http://www.google.com)
-                  so this kick _ass_ [badly](http://david.roncancio.me)
-
-    // Content
-    div#content-wrapper
-      div#content
-        div.5grid-layout
-          div.row
-            div.4u
-              section
-                header
-                  h2 Who are We
-                  h3 Some awesome group
-                a.feature-image(href='#')
-                  img(src='/images/pic05.jpg', alt='')
-                :markdown
-                  This is some parragraf, lorem ipsum
-
-            div.4u
-              section
-                header
-                  h2 Who are We
-                  h3 Some awesome group
-                ul.check-list
-                  li first
-                  li second
-                  li third
-                  li fourth
-
-            div.4u
-              section
-                header
-                  h2 Who are We
-                  h3 Some awesome group
-                ul.quote-list
-                  li
-                    img(src='/images/pic06.jpg', alt='')
-                    p "His name!!"
-                    span and some infor
-                  li
-                    img(src='/images/pic07.jpg', alt='')
-                    p "His name!!"
-                    span and some infor
-                  li
-                    img(src='/images/pic08.jpg', alt='')
-                    p "His name!!"
-                    span and some infor
-
-    // Footer
-    div#footer-wrapper
-      footer#footer.5grid-layout
-        div.row
-          div.8u
-            section
-              h2 Links to important stuff
-              div.5grid
-                div.row
-                  div.3u
-                    ul.link-list.last-child
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                  div.3u
-                    ul.link-list.last-child
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                  div.3u
-                    ul.link-list.last-child
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-                      li
-                        a(href='#') some url
-          div.4u
-            section
-              h2 an informative text
-              :markdown
-                Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu 
-                varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, 
-                dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh 
-                lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
-
+    script(src='css/5grid/jquery.js')
+    script(src='css/5grid/jquery.scrollTo.js')
+    script(src='css/5grid/jquery.nav.js')
+    script(src='css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI.titleBarHeight=55&amp;mobileUI.openerWidth=75&amp;mobileUI.openerText=&lt;')
+    script(type='text/javascript')
+      var switchTo5x=true;
+    script(src='http://w.sharethis.com/button/buttons.js')
+    script(type='text/javascript')
+      stLight.options({publisher: "cb9b1ed5-92b7-4d0d-87ac-07112bc77a27"});
     // Copyright
     div#copyright
       &copy; Untitled. All rights reserved. | Design:

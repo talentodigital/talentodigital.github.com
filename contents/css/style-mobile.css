@@ -299,3 +299,7 @@ body, input, textarea, select
 	.mobileUI-site-nav-link:last-child {
 		border-bottom: 0;
 	}
+
+	.sharethis {
+		float: right;
+	}

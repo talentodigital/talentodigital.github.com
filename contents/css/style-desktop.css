@@ -215,3 +215,7 @@ section:last-child
 		{
 			color: #8d9ca3;
 		}
+
+	.sharethis {
+		float: right;
+	}

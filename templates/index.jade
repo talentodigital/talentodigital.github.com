@@ -1,0 +1,80 @@
+extends layout
+
+block content
+
+  include features
+
+  // Content
+  div#content-wrapper
+    div#content
+      div.5grid-layout
+        div.row
+          div.3u
+            section
+               div.quote-list
+                img(src='/images/Jonathan-Tarud.jpg', alt='Jonathan Tarud')
+                :markdown
+                  # [Jonathan Tarud](http://twitter.com/dangertz)
+                  CEO, Region Américas, Lenddo
+                  There should also be a way to have a longer description
+
+          div.3u
+            section
+               div.quote-list
+                img(src='/images/Yuji-Kiriki.jpg', alt='Yuji Kiriki')
+                :markdown
+                  # [Yuji Kiriki](http://twitter.com/dangertz)
+                  CEO, Region Américas, Lenddo
+                  There should also be a way to have a longer description
+
+          div.3u
+            section
+               div.quote-list
+                img(src='/images/Rafael-Garcia.jpg', alt='Rafael Garcia')
+                :markdown
+                  # [Rafael Garcia](http://twitter.com/dangertz)
+                  CEO, Region Américas, Lenddo
+                  There should also be a way to have a longer description
+
+          div.3u
+            section
+               div.quote-list
+                img(src='/images/Missing_Panelist.jpg', alt='Jonathan Tarud')
+                :markdown
+                  # [Missing](http://twitter.com/dangertz) (Moredador)
+                  Missing Description
+
+        div.row
+          div.4u
+            section
+              header
+                h2 Organizadores
+                h3 Logistica
+                a.feature-image(href='#')
+                  img(src='/images/pic05.jpg', alt='')
+              :markdown
+                [Dan Gertsacov](http://twitter.com/dangertz), CEO, Region Américas, Lenddo -
+                There should also be a way to have a longer description
+
+          div.4u
+            section
+              header
+                h2 Who are We
+                h3 Some awesome group
+              ul.check-list
+                li first
+                li second
+                li third
+                li fourth
+
+          div.4u
+            section
+              header
+                h2 Moderador
+                a.feature-image(href='#')
+                  img(src='/images/pic05.jpg', alt='')
+                :markdown
+                  [Dan Gertsacov](http://twitter.com/dangertz), CEO, Region Américas, Lenddo 
+
+
+  include footer
